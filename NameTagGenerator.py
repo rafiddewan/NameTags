@@ -3,7 +3,8 @@ first_name = "Rafid"
 last_name = "Dewan"
 university = "Carleton Univeristy"
 program = "Software Engineering"
-img = Image.open('School-Name-Tag.jpg')
+imageName = 'School-Name-Tag'
+img = Image.open(imageName + '.jpg')
 draw = ImageDraw.Draw(img)
 font = ImageFont.truetype("/usr/share/fonts/truetype/freefont/FreeMono.ttf", 28, encoding="unic")
 draw.text((100, 60),first_name + " " + last_name,(0,0,0),font = font)
